@@ -5,8 +5,8 @@ namespace Interview_Calendar.Services
 {
 	public interface IUserService
 	{
-		Task<bool> CreateUser(UserDto userDto);
-        Task<UserDto?> GetUserByEmail(string email);
+		Task<UserDto?> CreateUserAsync(UserCreateDto userDto);
+        Task<UserDto?> GetUserByEmailAsync(string email);
     }
 }
 
