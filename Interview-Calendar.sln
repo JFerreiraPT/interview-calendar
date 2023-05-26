@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1705.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interview-Calendar", "Interview-Calendar.csproj", "{F4625967-C2B2-47B9-AFE1-BC83867E379B}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{5CE7115A-FDB4-4268-BF2F-5D8B7CA7A9CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F4625967-C2B2-47B9-AFE1-BC83867E379B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4625967-C2B2-47B9-AFE1-BC83867E379B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4625967-C2B2-47B9-AFE1-BC83867E379B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CE7115A-FDB4-4268-BF2F-5D8B7CA7A9CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CE7115A-FDB4-4268-BF2F-5D8B7CA7A9CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CE7115A-FDB4-4268-BF2F-5D8B7CA7A9CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CE7115A-FDB4-4268-BF2F-5D8B7CA7A9CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
