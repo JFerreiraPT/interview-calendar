@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 //Configure Database Connection
-builder.Services.Configure<InterviewCalendarDBConfiguration>(
+builder.Services.Configure<UserDBConfiguration>(
         builder.Configuration.GetSection("InterviewCalendarDb")
     );
 
