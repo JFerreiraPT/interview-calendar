@@ -24,6 +24,12 @@ namespace Interview_Calendar.Controllers
 			return CreatedAtAction(nameof(Create), new { nameof = userCreate.Name }, user);
 		}
 
+		[HttpGet("{email}")]
+		public async Task<IActionResult> GetByEmail(string email)
+		{
+			var user = await _userService.GetUserByEmailAsync(email);
+			return Ok(user);
+		}
 	}
 }
 

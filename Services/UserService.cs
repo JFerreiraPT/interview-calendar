@@ -50,7 +50,7 @@ namespace Interview_Calendar.Services
             
         }
 
-        public async Task<UserDto?> GetUserByEmailAsync(string email) => _mapper.Map<UserDto>(await _userCollection.FindAsync(x => x.Email == email));
+        public async Task<UserDto?> GetUserByEmailAsync(string email) => _mapper.Map<UserDto>(await _userCollection.FindAsync(x => x.Email == email).Result.FirstOrDefaultAsync());
     }
 }
 
