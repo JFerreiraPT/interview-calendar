@@ -7,7 +7,7 @@ namespace Interview_Calendar.Models
     [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum UserTypeEnum
 	{
-        interviewer,
+        Interviewer,
         Candidate,
     }
 }
