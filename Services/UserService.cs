@@ -25,7 +25,7 @@ namespace Interview_Calendar.Services
 
         }
 
-        public async Task<UserDto?> CreateUserAsync(UserCreateDto userDto)
+        public async Task<UserDTO?> CreateUserAsync(UserCreateDTO userDto)
         {
             var checkIfUserExists = _userCollection.Find(x => x.Email == userDto.Email).FirstOrDefault();
 
@@ -41,7 +41,7 @@ namespace Interview_Calendar.Services
             {
                 await _userCollection.InsertOneAsync(_mapper.Map<User>(userDto));
 
-                return _mapper.Map<UserDto>(userDto);
+                return _mapper.Map<UserDTO>(userDto);
             }
             catch (Exception ex)
             {
@@ -50,7 +50,7 @@ namespace Interview_Calendar.Services
             
         }
 
-        public async Task<UserDto?> GetUserByEmailAsync(string email) => _mapper.Map<UserDto>(await _userCollection.FindAsync(x => x.Email == email).Result.FirstOrDefaultAsync());
+        public async Task<UserDTO?> GetUserByEmailAsync(string email) => _mapper.Map<UserDTO>(await _userCollection.FindAsync(x => x.Email == email).Result.FirstOrDefaultAsync());
     }
 }
 

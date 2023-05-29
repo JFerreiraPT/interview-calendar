@@ -18,7 +18,7 @@ namespace Interview_Calendar.Controllers
 		}
 
 		[HttpPost]
-        public async Task<IActionResult> Create(UserCreateDto userCreate)
+        public async Task<IActionResult> Create(UserCreateDTO userCreate)
 		{
 			var user = await _userService.CreateUserAsync(userCreate);
 			return CreatedAtAction(nameof(Create), new { nameof = userCreate.Name }, user);
