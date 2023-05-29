@@ -27,7 +27,7 @@ namespace Interview_Calendar.Services
 
         public async Task<UserDto?> CreateUserAsync(UserCreateDto userDto)
         {
-            var checkIfUserExists = _userCollection.Find(x => x.Email == userDto.Email);
+            var checkIfUserExists = _userCollection.Find(x => x.Email == userDto.Email).FirstOrDefault();
 
             if (checkIfUserExists != null)
             {

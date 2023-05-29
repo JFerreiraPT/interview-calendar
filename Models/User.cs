@@ -4,7 +4,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace Interview_Calendar.Models
 {
-	public abstract class User : BaseEntity
+	public class User : BaseEntity
 	{
         [BsonRequired]
         public string Name { get; set; } = default!;

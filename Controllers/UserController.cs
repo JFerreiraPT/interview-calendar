@@ -1,5 +1,6 @@
 ﻿using System;
 using Interview_Calendar.DTOs;
+using Interview_Calendar.Models;
 using Interview_Calendar.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -22,7 +23,6 @@ namespace Interview_Calendar.Controllers
 			var user = await _userService.CreateUserAsync(userCreate);
 			return CreatedAtAction(nameof(Create), new { nameof = userCreate.Name }, user);
 		}
-
 
 	}
 }

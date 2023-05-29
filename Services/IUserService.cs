@@ -1,5 +1,6 @@
 ﻿using System;
 using Interview_Calendar.DTOs;
+using Interview_Calendar.Models;
 
 namespace Interview_Calendar.Services
 {
@@ -7,6 +8,7 @@ namespace Interview_Calendar.Services
 	{
 		Task<UserDto?> CreateUserAsync(UserCreateDto userDto);
         Task<UserDto?> GetUserByEmailAsync(string email);
+
     }
 }
 
