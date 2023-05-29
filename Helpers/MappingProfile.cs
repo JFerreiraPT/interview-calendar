@@ -10,8 +10,13 @@ namespace Interview_Calendar.Helpers
 	{
 		public MappingProfile()
 		{
-			CreateMap<User, UserDto>().ReverseMap();
-		}
+			CreateMap<Interviewer, UserDTO>().ReverseMap();
+            CreateMap<Interviewer, UserCreateDTO>().ReverseMap();
+            CreateMap<Candidate, UserDTO>().ReverseMap();
+            CreateMap<Candidate, UserCreateDTO>().ReverseMap();
+            CreateMap<Interviewer, InterviewerResponseDTO>().ReverseMap();
+            CreateMap<Candidate, InterviewerResponseDTO>().ReverseMap();
+        }
 	}
 }
 

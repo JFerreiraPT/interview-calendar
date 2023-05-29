@@ -3,7 +3,7 @@ namespace Interview_Calendar.Models
 {
 	public class Candidate : User
 	{
-        public DateTime date = default!;
+        public DateTime Interview = default!;
     }
 }
 

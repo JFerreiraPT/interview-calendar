@@ -4,7 +4,7 @@ using Interview_Calendar.Models;
 
 namespace Interview_Calendar.DTOs
 {
-	public class UserDto
+	public class UserDTO
 	{
         [Required]
         public string Name { get; set; } = default!;
